@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PYSCRIPT -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+  <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Ainah University</title>
+  <style>
+  .raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  }
+  .navbar {
+    background-color: palevioletred;
+  }
+  </style>
+</head>
+<body class="bg-light">
+    <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <h3 class="text-light p-2">Ainah University</h3>
+
+      <!-- Button for mobile view -->
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="https://amacabago.github.io/GH_ICT10_Q2Project_Macabago_Sittie/index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="https://amacabago.github.io/GH_ICT10_Q2Project_Macabago_Sittie/grade.html">GRADE CALCULATOR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="https://amacabago.github.io/GH_ICT10_Q2Project_Macabago_Sittie/clubs.html">CLUBS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div id="School Clubs" class="container rounded shadow-sm text-center p-4 my-3">
+      <h1>School Clubs</h1>
+      <hr>
+
+      <label for="schoolClub" class="py-3">Select a School Club:</label>
+      <select id="schoolClub" name="schoolClub">
+          <option value="Art">Art</option>
+          <option value="Science">Science</option>
+          <option value="Math">Math</option>
+      </select>
+      <br>
+      <button class="btn btn-outline-dark mb-4 mt-2" py-click="clubInfo">Show Club Information</button>
+
+      <hr>
+      <div id="output"></div>
+    </div>
+    
+
+
+    <py-script src="clubs.py"></py-script>
+</body>
+</html>
